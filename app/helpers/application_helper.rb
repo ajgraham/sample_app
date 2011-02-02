@@ -10,5 +10,13 @@ module ApplicationHelper
      "#{base_title} | #{@title}"
    end
  end
+
+  class String
+    
+    def shuffle
+       self.split('').shuffle.join
+    end
+    
+  end
   
 end
