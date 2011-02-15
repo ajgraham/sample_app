@@ -41,7 +41,7 @@ module SampleApp
     
     if Rails.env.test?
     	initializer :after => :initialize_dependency_mechanism do
-    		ActivesSupport::Dependencies.mechanism = :load
+    		ActiveSupport::Dependencies.mechanism = :load
     	end
     end
   end
